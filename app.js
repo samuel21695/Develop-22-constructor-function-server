@@ -24,3 +24,12 @@ class SimpleServer {
   }
 }
 
+// SimpleServer 인스턴스 생성 및 시작
+const simpleApp = new SimpleServer(3000);
+simpleApp.start();
+
+const portRange = {
+  min: 3001,
+  max: 3005,
+}
+
