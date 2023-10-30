@@ -33,3 +33,9 @@ const portRange = {
   max: 3005,
 }
 
+// 3001, 3002, 3003, 3004, 3005 port가 모두 열렸다.
+// 각각의 역할을 하는 포트를 만들어서 사용할 수 있다.
+for (let i = portRange.min; i< portRange.max; i++) {
+  const app = new SimpleServer(i)
+  app.start();
+}
